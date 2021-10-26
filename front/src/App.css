@@ -1,13 +1,13 @@
 .App {
   height: 100vh;
-  background-color: #0d1116;
+  background-color: #020315;
   overflow: scroll;
   text-align: center;
 }
 
 .container {
   height: 100%;
-  background-color: #0d1116;
+  background-color: #020315;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -22,6 +22,12 @@
   font-size: 50px;
   font-weight: bold;
   color: white;
+}
+
+.gradient-text {
+  background-image: linear-gradient(60deg, #E21143, #FFB03A);
+  background-clip: text;
+  color: transparent;
 }
 
 .sub-text {

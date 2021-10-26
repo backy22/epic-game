@@ -1,14 +1,14 @@
 const main = async () => {
   const gameContractFactory = await hre.ethers.getContractFactory('MyEpicGame');
   const gameContract = await gameContractFactory.deploy(
-    ["Mask", "Sailor Moon", "Barney"],       // Names
-    ["https://i.imgur.com/dA6qCJO.png",
-    "https://i.imgur.com/MIErC8R.gif", 
-    "https://i.imgur.com/LgXev.gif"],
-    [100, 200, 300],                    // HP values
+    ["Ted Lasso", "Don Draper", "Dexter"],
+    ["QmTrS6Q4x6ntDA73FXFAPks1bHBTAg5xrtbVcz6jD3C457",
+    "Qmf5Lb4HymBw5RKbU7YxWH9CwvDPHjY3KBo1EumrHfcSVX", 
+    "QmVmWVveDwxT6sUKXsVvEZRXWQeVBys3eY7G4MWia8QqSN"],
+    [500, 400, 300],                    // HP values
     [100, 50, 25],                    // Attack damage values
-    "Maleficent", // Boss name
-    "https://i.imgur.com/Ky6ecWO.png",
+    "Queens Gambit", // Boss name
+    "QmdYwYdP7KuK8vJimhpzAj1YY26rNgXikPYsezT5DxXPPk",
     1000, // Boss hp
     50 // Boss atack damage
   );

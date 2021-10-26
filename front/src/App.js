@@ -92,6 +92,7 @@ const renderContent = () => {
         alert('Get MetaMask!');
         return;
       }
+      setIsLoading(true)
 
       /*
        * Fancy method to request access to account.
@@ -111,7 +112,6 @@ const renderContent = () => {
   };
 
   useEffect(() => {
-    setIsLoading(true)
     checkIfWalletIsConnected();
   }, []);
 
@@ -152,7 +152,7 @@ const renderContent = () => {
     <div className="App">
       <div className="container">
         <div className="header-container">
-          <p className="header gradient-text">⚔️ Metaverse Slayer ⚔️</p>
+          <p className="header gradient-text">⚔️ Metaverse Netflix Slayer ⚔️</p>
           <p className="sub-text">Team up to protect the Metaverse!</p>
           <div className="connect-wallet-container">
             {renderContent()}
